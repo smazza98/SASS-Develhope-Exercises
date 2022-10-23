@@ -1,0 +1,31 @@
+.container {
+  border: 1px solid red;
+}
+.container .title {
+  width: 100%;
+}
+.container .title h1 {
+  padding-top: 40px;
+  margin: auto;
+  text-align: center;
+  width: 464px;
+  font-size: 1.8rem;
+  color: green;
+  border-bottom: 1px solid blue;
+}
+.container .content {
+  display: flex;
+  margin: 0 12px;
+  padding: 0;
+}
+.container .content p {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid green;
+}
+.container #blue {
+  color: blue;
+}
+.container #red {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

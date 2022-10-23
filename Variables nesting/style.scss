@@ -1,0 +1,43 @@
+.container {
+
+    $color-primary: red;
+    $color-socondary: blue;
+    $color-tertiary: green;
+
+
+    border: 1px solid $color-primary;
+
+  .title {
+    width: 100%;
+
+    h1 {
+        padding-top: 40px;
+        margin: auto;
+        text-align: center;
+        width: 464px;
+        font-size: 1.8rem;
+        color: $color-tertiary;
+        border-bottom: 1px solid $color-socondary;
+      }
+  }
+
+  .content {
+    display: flex;
+    margin: 0 12px;
+    padding: 0;
+
+    p {
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid $color-tertiary;
+      }
+  }
+
+  #blue {
+    color: $color-socondary;
+  }
+
+  #red {
+    color: $color-primary;
+  }
+}
