@@ -1,0 +1,57 @@
+@mixin article-style ($color, $border-color, $font-size: 1rem){
+    border: 1px solid $border-color;
+    color: $color;
+    font-size: $font-size;
+    }
+
+
+    .container {
+
+        $color-primary: red;
+        $color-secondary: blue;
+        $color-tertiary: green;
+    
+    
+        @include article-style($color: none, $border-color: $color-primary);
+    
+      .title {
+        width: 100%;
+    
+        h1 {
+            color: $color-tertiary;
+            padding-top: 40px;
+            margin: auto;
+            text-align: center;
+            width: 277px;
+            font-size: 1.8rem;
+            border-bottom: 1px solid $color-secondary;
+          }
+      }
+    
+      .content {
+        display: flex;
+        margin: 0 12px;
+        padding: 0;
+    
+        p {
+            @include article-style($color:none, $border-color: $color-tertiary);
+            padding: 1rem;
+            text-align: center;
+          }
+      }
+
+      .footer {
+        @include article-style($color:$color-tertiary, $border-color: $color-secondary, $font-size: 24px);
+
+        margin: 10px 12px;
+        text-align: center;
+      }
+    
+      #blue {
+        color: $color-secondary;
+      }
+    
+      #red {
+        color: $color-primary;
+      }
+    }

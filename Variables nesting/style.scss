@@ -1,7 +1,7 @@
 .container {
 
     $color-primary: red;
-    $color-socondary: blue;
+    $color-secondary: blue;
     $color-tertiary: green;
 
 
@@ -17,7 +17,7 @@
         width: 464px;
         font-size: 1.8rem;
         color: $color-tertiary;
-        border-bottom: 1px solid $color-socondary;
+        border-bottom: 1px solid $color-secondary;
       }
   }
 
@@ -34,7 +34,7 @@
   }
 
   #blue {
-    color: $color-socondary;
+    color: $color-secondary;
   }
 
   #red {
