@@ -1,0 +1,42 @@
+.container {
+  border: 0.0625rem solid red;
+  color: none;
+  font-size: 1rem;
+}
+.container .title {
+  width: 100%;
+}
+.container .title h1 {
+  color: green;
+  padding-top: 2.5rem;
+  margin: auto;
+  text-align: center;
+  width: 17.3125rem;
+  font-size: 1.8rem;
+  border-bottom: 0.0625rem solid blue;
+}
+.container .content {
+  display: flex;
+  margin: 0 0.75rem;
+  padding: 0;
+}
+.container .content p {
+  border: 0.0625rem solid green;
+  color: none;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.container .footer {
+  border: 0.0625rem solid blue;
+  color: green;
+  font-size: 24px;
+  margin: 0.625rem 0.75rem;
+  text-align: center;
+}
+.container #blue {
+  color: blue;
+}
+.container #red {
+  color: red;
+}/*# sourceMappingURL=index.css.map */
