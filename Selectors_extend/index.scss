@@ -1,0 +1,63 @@
+@import 'vars';
+@import 'functions';
+
+@mixin article-style ($color, $border-color, $font-size: 1rem){
+    border: conv(1) solid $border-color;
+    color: $color;
+    font-size: $font-size;
+    }
+
+    .container {
+    
+        @include article-style($color: none, $border-color: $color-primary);
+    
+      .title {
+        width: 100%;
+    
+        h1 {
+            color: $color-tertiary;
+            padding-top: conv(40);
+            margin: auto;
+            text-align: center;
+            width: conv(348);
+            font-size: 1.8rem;
+            border-bottom: conv(1) solid $color-secondary;
+          }
+        h2 {
+            @extend h1;
+            border: conv(1) solid red;
+            padding: 1rem 0 1rem 0;
+            text-decoration: none;
+            font-size: conv(22);
+            width: conv(250);
+            margin-top: conv(30);
+          }
+      }
+    
+      .content {
+        display: flex;
+        margin: 0 conv(12);
+        padding: 0;
+    
+        p {
+            @include article-style($color:none, $border-color: $color-tertiary, $font-size: conv(17));
+            padding: 2rem;
+            text-align: center;
+          }
+      }
+
+      .footer {
+        @include article-style($color:$color-tertiary, $border-color: $color-secondary, $font-size: conv(24));
+
+        margin: conv(10) conv(12);
+        text-align: center;
+      }
+    
+      #blue {
+        color: $color-secondary;
+      }
+    
+      #red {
+        color: $color-primary;
+      }
+    }

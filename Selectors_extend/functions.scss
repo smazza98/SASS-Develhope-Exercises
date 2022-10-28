@@ -1,0 +1,4 @@
+@function conv($num) {
+    $remNum: ($num / 16 + rem); 
+    @return $remNum;
+}
